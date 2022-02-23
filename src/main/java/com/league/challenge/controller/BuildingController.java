@@ -10,15 +10,15 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.league.challenge.BookingRepository;
-import com.league.challenge.BuildingRepository;
-import com.league.challenge.RoomRepository;
 import com.league.challenge.dto.BookingDTO;
 import com.league.challenge.dto.BuildingDTO;
 import com.league.challenge.dto.RoomDTO;
 import com.league.challenge.model.BookingEntity;
 import com.league.challenge.model.BuildingEntity;
 import com.league.challenge.model.RoomEntity;
+import com.league.challenge.service.repository.BookingRepository;
+import com.league.challenge.service.repository.BuildingRepository;
+import com.league.challenge.service.repository.RoomRepository;
 
 @RestController
 @EnableAutoConfiguration

@@ -6,14 +6,14 @@ import com.league.challenge.model.RoomEntity;
 
 public class AvailabilityRoomDTO {
 	
-	private RoomEntity room;
+	private RoomDTO room;
 	private LocalDateTime from;
 	private LocalDateTime to;
 	
-	public RoomEntity getRoom() {
+	public RoomDTO getRoom() {
 		return room;
 	}
-	public void setRoom(RoomEntity room) {
+	public void setRoom(RoomDTO room) {
 		this.room = room;
 	}
 	public LocalDateTime getFrom() {

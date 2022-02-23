@@ -5,6 +5,7 @@ import com.league.challenge.model.RoomEntity;
 
 public class RoomDTO {
 
+	private Long id;
 	private Long roomNumber;
 	private Long floor;
 	private Long capacity;
@@ -14,7 +15,8 @@ public class RoomDTO {
 	
 	public static RoomDTO converter(RoomEntity entity) {
 		RoomDTO dto = new RoomDTO();
-
+		
+		dto.setId(entity.getId());
 		dto.setBuilding(BuildingDTO.converter(entity.getBuilding()));
 		dto.setFloor(entity.getFloor());
 		dto.setRoomNumber(entity.getRoomNumber());
@@ -72,6 +74,16 @@ public class RoomDTO {
 
 	public void setRoomNumber(Long roomNumber) {
 		this.roomNumber = roomNumber;
+	}
+
+
+	public Long getId() {
+		return id;
+	}
+
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 }
